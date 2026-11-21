@@ -235,7 +235,7 @@ Trivially also $d(t^2)=2t\,dt$ and $d(t)=dt$.
 $$
 X_i(t)=X_i(t_1)+F_i(t-t_1)+G_i(B_t-B_{t_1})=c_i+Y_i(t),\qquad Y_i(t):=F_it+G_iB_t,
 $$
-where $c_i:=X_i(t_1)-F_it_1-G_iB_{t_1}$ is $\mathcal F_{t_1}$-measurable. Since $dY_i=F_i\,dt+G_i\,dB_t$ on $[t_1,t_2]$ (random $\mathcal F_{t_1}$-measurable factors can be taken outside the stochastic integral on $[t_1,t_2]$, Theorem 5.31),
+where $c_i:=X_i(t_1)-F_it_1-G_iB_{t_1}$ is $\mathcal F_{t_1}$-measurable. Since $dY_i=F_i\,dt+G_i\,dB_t$ on $[t_1,t_2]$ (random $\mathcal F_{t_1}$-measurable factors can be taken outside the stochastic integral on $[t_1,t_2]$, Theorem 5.30, slides 5.31),
 $$
 X_1X_2=c_1c_2+c_1Y_2+c_2Y_1+Y_1Y_2,
 $$
@@ -244,7 +244,7 @@ $$
 d(Y_1Y_2)=Y_1\,dY_2+Y_2\,dY_1+G_1G_2\,dt\quad\text{on }[t_1,t_2].
 $$
 
-*Step 2 (expand).* Using linearity, Theorem 5.31 again, and the three differentials of Section 4.0:
+*Step 2 (expand).* Using linearity, Theorem 5.30 (slides 5.31) again, and the three differentials of Section 4.0:
 $$
 \begin{aligned}
 d(Y_1Y_2)&=d\big((F_1t+G_1B_t)(F_2t+G_2B_t)\big)\\
@@ -269,7 +269,7 @@ $$
 
 **What graders look for / pitfalls.**
 
-- The coefficients on each interval are **random** but $\mathcal F_{t_k}$-measurable: say so, and cite "a $\mathcal F_a$-measurable factor can be taken out of $\int_a^b$" (Theorem 5.31). Treating them as deterministic constants without comment loses points.
+- The coefficients on each interval are **random** but $\mathcal F_{t_k}$-measurable: say so, and cite "a $\mathcal F_a$-measurable factor can be taken out of $\int_a^b$" (Theorem 5.30, slides 5.31). Treating them as deterministic constants without comment loses points.
 - Do not forget the initial values $c_i$ (the notes silently set them to zero; a sentence handles them).
 - Name where $d(B^2)$ and $d(tB)$ come from (Examples 6.4 and 6.5, Riemann sums + quadratic variation of BM).
 - The covariation term is $G_1G_2\,dt$, not $F_1F_2\,dt$ or $(G_1+G_2)^2dt$.

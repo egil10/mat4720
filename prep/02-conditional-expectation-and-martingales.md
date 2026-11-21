@@ -2,7 +2,7 @@
 
 This chapter covers syllabus sections **3. Conditional Expectation** (slides 3, Baldi Ch. 4) and **4. Martingales** (slides 4, Baldi Ch. 5). All numbering follows the course slides and handwritten notes. Baldi numbers are given in brackets where useful.
 
-> **Numbering warning.** The handwritten notes for Chapter 3 call the existence/uniqueness result "Definition and Theorem 3.1" and the testing remark "Remark 3.2". In the slides (and the final syllabus) these are **Definition and Theorem 3.4** and **Remark 3.5**. The notes for Chapter 4 head the upcrossing proof "Proposition 4.12"; in the slides it is **Proposition 4.11**. Always use the slide numbers on the exam.
+> **Numbering warning.** The handwritten notes for Chapter 3 call the existence/uniqueness result "Definition and Theorem 3.1" and the testing remark "Remark 3.2". In the slides (and the final syllabus) these are **Definition and Theorem 3.4** and **Remark 3.5**. (The notes' "Remark 3.2" is a monotone-class argument that proves both Remark 3.5, testing against bounded $W$, and Remark 3.6, verifying on a $\pi$-system. Know both.) The notes for Chapter 4 head the upcrossing proof "Proposition 4.12"; in the slides it is **Proposition 4.11**. Always use the slide numbers on the exam.
 
 ## 1. Exam relevance
 
