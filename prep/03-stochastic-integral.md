@@ -6,7 +6,7 @@ This chapter covers syllabus section 5, "The stochastic Integral". It follows th
 >
 > | Content | Syllabus / notes | Slides |
 > |---|---|---|
-> | Uniform convergence in probability | (unnumbered) | Thm 5.28 |
+> | Uniform convergence in probability | (unnumbered in the ch. 5 notes; the ch. 6 notes cite it as "Theorem 5.28") | Thm 5.28 |
 > | Left-endpoint Riemann sums | **Prop 5.28** | Prop 5.29 |
 > | Progressive measurability remark | Rem 5.29 | Rem 5.30 |
 > | Random factor outside the integral | Thm 5.30 | Thm 5.31 |
@@ -195,7 +195,7 @@ which is a square integrable martingale. Hence **$I$ is a continuous local marti
 - (c) One can choose the reducing sequence so that every stopped martingale is uniformly integrable: $\sigma_n=\tau_n\wedge n$. Then $M_{t\wedge\sigma_n}=E[M_{\sigma_n}\mid\mathcal F_t]$, which is UI.
 - (d) If $M$ is continuous and $|M_0|\le c$, take $\rho_n=\inf\{t:|M_t|\ge n\}$ ($n\ge c$) and $\sigma_n=\tau_n\wedge\rho_n$. Then $|M_{t\wedge\sigma_n}|\le n$: the stopped processes are **bounded** martingales. For general $M_0\in L^1$, apply this to $M-M_0$.
 
-**Remark 5.34 (slide 5.35).** A bounded local martingale is a martingale (dominated convergence in $E[M_{t\wedge\tau_n}\mid\mathcal F_s]=M_{s\wedge\tau_n}$). But uniform integrability of $(M_t)_{t\ge0}$ alone does **not** make a local martingale a martingale (Baldi Ex. 8.10). A sufficient condition is that for each $t$ the family $\{M_{t\wedge\tau}:\tau\text{ stopping time}\}$ is UI (Baldi Ex. 7.15, Exercise 17 below).
+**Remark 5.34 (slide 5.35).** A bounded local martingale is a martingale (dominated convergence in $E[M_{t\wedge\tau_n}\mid\mathcal F_s]=M_{s\wedge\tau_n}$). But uniform integrability of $(M_t)_{t\ge0}$ alone does **not** make a local martingale a martingale (Baldi Example 8.10, $1/|B_t-x|$ in $\mathbb R^3$). A sufficient condition is that for each $t$ the family $\{M_{t\wedge\tau}:\tau\text{ stopping time}\}$ is UI (Baldi Ex. 7.15, Exercise 16 below).
 
 **Definition 5.38 (slide 5.39).** $\langle M,N\rangle=\frac14(\langle M+N\rangle-\langle M-N\rangle)$ is continuous, of finite variation, starts at $0$, and need not be increasing. $\langle M,M\rangle=\langle M\rangle$.
 
@@ -713,7 +713,9 @@ See Exercise 2 for the full proof.
 From the notes (p. 5.2–5.5):
 
 - Jensen gives $|f_i|^p\le\frac n{b-a}\int_{t_{i-1}}^{t_i}|f|^p$, hence $\int_a^b|G_nf|^p\le\int_a^b|f|^p$.
-- $G_{2^n}f=G_{2^n}(G_{2^{n+1}}f)$ gives monotonicity: $\int|G_{2^n}f|^p\le\int|G_{2^{n+1}}f|^p$.
+- Monotonicity $\int|G_{2^n}f|^p\le\int|G_{2^{n+1}}f|^p$: each coefficient of $G_{2^n}f$ is the average of two consecutive coefficients $g_{2i-1},g_{2i}$ of $G_{2^{n+1}}f$ (on fine cells of length $h$), so by Jensen $|c_i|^p\,2h\le(|g_{2i-1}|^p+|g_{2i}|^p)h$; sum over $i$.
+
+> **Note:** The notes write this as $G_{2^n}f=G_{2^n}(G_{2^{n+1}}f)$. Because of the one-cell shift in $G_n$ this identity is not literally exact, but the averaging argument above gives the monotonicity.
 - $\int|G_nf-f|^p\to0$: first for continuous $f$ (uniform continuity), then by density of continuous functions in $L^p$.
 - For progressive $X$, $X_n=G_nX$ is adapted, since $\int_{t_{i-1}}^{t_i}X_s\,ds\in\mathcal F_{t_i}$.
 - $M^p_{loc}$: pathwise convergence a.s. $M^p$: $\int|X-X_n|^p\le2^{p-1}(\int|X|^p+\int|X_n|^p)\le2^p\int|X|^p$, which is integrable, so dominated convergence gives $E\int|X-X_n|^p\to0$.
@@ -1276,7 +1278,7 @@ $Y$ is a nonnegative martingale, so $Y_\infty=\lim Y_t$ exists a.s. (Thm 4.12). 
 11. **Is $X\in M^2$ or only $M^2_{loc}$?** For example $e^{B_t^2}$: in $M^2([0,T])$ iff $T\le1/4$, always in $M^2_{loc}$. Outline: $E[e^{\lambda Z^2}]$.
 12. **Midpoint or right-endpoint sums.** Outline: the limits are $\frac12B_t^2$ and $\frac12B_t^2+\frac t2$; the decomposition of Exercise 4.
 13. **State locality (Thm 5.14), integration up to a stopping time (Thm 5.21), the random factor result (Thm 5.30), and the maximal estimates (Prop 5.17).** Statement-only questions. Know all hypotheses.
-14. **Short conceptual questions:** Why must integrands be progressive? Why is $\int B\,dB\ne\frac12B^2$? Is every local martingale a martingale? (No: a counterexample needs Ch. 6–8, e.g. Baldi Ex. 8.10. A bounded or nonnegative-with-constant-mean one is a martingale.) Why does a nonzero stochastic integral have infinite variation?
+14. **Short conceptual questions:** Why must integrands be progressive? Why is $\int B\,dB\ne\frac12B^2$? Is every local martingale a martingale? (No: a counterexample needs Ch. 6–8, e.g. Baldi Example 8.10. A bounded or nonnegative-with-constant-mean one is a martingale.) Why does a nonzero stochastic integral have infinite variation?
 
 ## 7. Flashcards
 

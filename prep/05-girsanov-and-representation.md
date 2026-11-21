@@ -1,6 +1,6 @@
 # Girsanov's Theorem and Martingale Representation (Chapter 7: More Stochastic Calculus)
 
-This chapter covers syllabus section 7 (slides 7, handwritten notes pp. 7.1–7.14, Baldi Ch. 12). Numbering follows the course (slides and notes). Baldi's numbers appear in brackets for reference: Prop 7.3 = Baldi Prop 12.1, Lemma 7.4 = Baldi Lemma 12.1 (Baldi proves only one direction), Thm 7.5 = Baldi Thm 12.1, Thm 7.6 = Baldi Prop 12.2, Thm 7.10 = Baldi Thm 12.4.
+This chapter covers syllabus section 7 (slides 7, handwritten notes pp. 7.1–7.14, Baldi Ch. 12). Numbering follows the course (slides and notes). Baldi's numbers appear in brackets for reference: Prop 7.3 = Baldi Prop 12.1, Lemma 7.4 = Baldi Lemma 12.1 (Baldi proves only one direction), Thm 7.5 = Baldi Thm 12.1, Thm 7.6 = Baldi Thm 12.2, Cor 7.7 = Baldi Cor 12.1, Thm 7.10 = Baldi Thm 12.4.
 
 Results from earlier chapters that we use:
 

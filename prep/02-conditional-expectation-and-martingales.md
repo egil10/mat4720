@@ -610,7 +610,7 @@ Since $A_0=A'_0=0$, induction gives $A'_n=A_n$ for all $n$, and then $M'_n=X_n-A
 
 **What graders look for / pitfalls.**
 
-- Predictability means $A_{n+1}$ is $\mathcal F_n$-measurable (not $\mathcal F_{n+1}$). Without predictability, uniqueness fails (e.g. $X_n=X_n+0$ and also $X_n=(X_n-\tilde A_n)+\tilde A_n$ for adapted $\tilde A$).
+- Predictability means $A_{n+1}$ is $\mathcal F_n$-measurable (not $\mathcal F_{n+1}$). Without predictability, uniqueness fails. Example: $X_n=\xi_1+\dots+\xi_n$ with $\xi_k$ i.i.d. Bernoulli$(p)$. Then $X=0+X$ (constant martingale $0$, increasing *adapted* $A=X$), and also $X_n=(X_n-np)+np$ (Doob: martingale plus predictable $A_n=np$).
 - In the uniqueness step, you must use that $A'_{n+1}-A'_n$ is $\mathcal F_n$-measurable to pull it out of the conditional expectation.
 - Check integrability of $A_n$ and $M_n$.
 
@@ -1392,9 +1392,9 @@ Show for $t,\lambda>0$: (a) $E[\sup_{s\le t}B_s^2]\le4t$ and $E[\sup_{s\le t}|B_
 
 **Full solution.** (a) $M_s=B_{s\wedge t}$ is a continuous martingale (stopped at the deterministic time $t$) with $\sup_sE[M_s^2]=t$. By Thm 4.32 with $p=q=2$: $\|\sup_{s\le t}|B_s|\|_2\le2\sqrt t$, i.e. $E[\sup_{s\le t}B_s^2]\le4t$; by Cauchy-Schwarz $E[\sup_{s\le t}|B_s|]\le2\sqrt t$.
 
-(b) $X_s=-B_s^2$ is a continuous supermartingale ($B^2$ is a submartingale). By (4.16) with level $\lambda^2$: $\lambda^2P(\inf_{s\le t}X_s\le-\lambda^2)\le E|X_t|=t$, and $\{\inf_{s\le t}(-B_s^2)\le-\lambda^2\}=\{\sup_{s\le t}|B_s|\ge\lambda\}$.
+(b) $X_s=-B_s^2$ is a continuous supermartingale ($B^2$ is a submartingale). By the second inequality of Thm 4.28 (slide eq. (4.16)) with level $\lambda^2$: $\lambda^2P(\inf_{s\le t}X_s\le-\lambda^2)\le E|X_t|=t$, and $\{\inf_{s\le t}(-B_s^2)\le-\lambda^2\}=\{\sup_{s\le t}|B_s|\ge\lambda\}$.
 
-(c) For $\theta>0$, $M_s=e^{\theta B_s-\theta^2s/2}$ is a positive continuous martingale, so $-M$ is a supermartingale; by (4.16), $cP(\sup_{s\le t}M_s\ge c)\le E[M_t]=1$. For $s\le t$, $M_s\ge e^{\theta B_s-\theta^2t/2}$, so $\{\sup_{s\le t}B_s\ge\lambda\}\subset\{\sup_{s\le t}M_s\ge e^{\theta\lambda-\theta^2t/2}\}$ and
+(c) For $\theta>0$, $M_s=e^{\theta B_s-\theta^2s/2}$ is a positive continuous martingale, so $-M$ is a supermartingale; by the second inequality of Thm 4.28 (slide eq. (4.16)), $cP(\sup_{s\le t}M_s\ge c)\le E[M_t]=1$. For $s\le t$, $M_s\ge e^{\theta B_s-\theta^2t/2}$, so $\{\sup_{s\le t}B_s\ge\lambda\}\subset\{\sup_{s\le t}M_s\ge e^{\theta\lambda-\theta^2t/2}\}$ and
 $$
 P\Big(\sup_{s\le t}B_s\ge\lambda\Big)\le e^{-\theta\lambda+\theta^2t/2}.
 $$

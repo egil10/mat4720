@@ -87,7 +87,7 @@ The space-time harmonic polynomials come from $H_n$: $e^{\lambda x-\lambda^2t/2}
 - Stochastic exponential: $Z=\mathcal E(\int X\,dB)$ solves $dZ=ZX\,dB$, $Z_0=1$.
 - Exponential bound (Prop 6.15): if $\int_0^TX^2ds\le k$ a.s., then $P(\sup_{t\le T}|\int_0^tX\,dB|\ge x)\le 2e^{-x^2/(2k)}$.
 - BDG-type estimate (Prop 6.21): $E[\sup_{t\le T}|\int_0^tX\,dB|^p]\le c_p\,E[(\int_0^TX^2ds)^{p/2}]$ for $p\ge2$, and also $\le c_pT^{\frac p2-1}E\int_0^T|X_s|^pds$.
-- Time change: a continuous local martingale is $M_t=W_{\langle M\rangle_t}$ for some BM $W$ (Dambis–Dubins–Schwarz).
+- Time change: a continuous local martingale with $M_0=0$ and $\langle M\rangle_\infty=\infty$ a.s. is $M_t=W_{\langle M\rangle_t}$ for some BM $W$ (Dambis–Dubins–Schwarz). Course version (Thm 6.17, Cor 6.20): for $X\in M^2_{loc}([0,\infty))$ with $\int_0^\infty X_s^2ds=\infty$ a.s., $\int_0^tX\,dB=W_{A_t}$, $A_t=\int_0^tX_s^2ds$.
 
 ## Girsanov / representation
 

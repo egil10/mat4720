@@ -109,7 +109,7 @@ Notation: for $\lambda=1$ we write $\mathcal E(X)_t:=\exp\left(\int_0^tX_s\,dB_s
 
 *Proof of (2).* $Y_t=1+\lambda\int_0^tY_sX_s\,dB_s$ and the integrand is in $M^2$, so the integral is a square integrable martingale (Theorem 5.16).
 
-Other sufficient conditions (useful in exercises, proved or stated in chapter 7): $X$ deterministic in $L^2([0,T])$ (then $\int X\,dB$ is Gaussian and $E[Y_t]=1$ directly by Remark 5.20); $X$ bounded (Exercise 15 below); Novikov's criterion $E[\exp(\frac12\int_0^TX_s^2ds)]<\infty$ (Theorem 7.6).
+Other sufficient conditions (useful in exercises, proved or stated in chapter 7): $X$ deterministic in $L^2([0,T])$ (then $\int X\,dB$ is Gaussian and $E[Y_t]=1$ directly by Remark 5.20); $X$ bounded (Exercise 18 below); Novikov's criterion $E[\exp(\frac12\int_0^TX_s^2ds)]<\infty$ (Theorem 7.6).
 
 **Proposition 6.16 (exponentials of several integrals, S).** For $X_1,\dots,X_m\in M^2_{loc}([0,T])$, $\lambda_i\in\mathbb C$, $M_i(t)=\int_0^tX_i\,dB$, $C_{ij}(t)=\int_0^tX_iX_j\,ds$:
 $$
@@ -545,7 +545,7 @@ $$
 2. Drift $\ne0$ on a set of positive $dt\otimes P$ measure: not a local martingale (uniqueness, Remark 6.2).
 3. Drift $=0$: $Y$ is a local martingale; check $H\in M^2([0,T])$ for the $dB$-coefficient $H$, i.e. $E\int_0^TH_s^2ds<\infty$, to get a true martingale.
 
-Two facts used repeatedly: for $B_s\sim N(0,s)$, $E[e^{cB_s}]=e^{c^2s/2}$ and $E[B_s^{2k}]=(2k-1)!!\,s^k$; and for $c<\frac1{2s}$, $E[e^{-cB_s^2}]=(1+2cs)^{-1/2}$.
+Two facts used repeatedly: for $B_s\sim N(0,s)$, $E[e^{cB_s}]=e^{c^2s/2}$ and $E[B_s^{2k}]=(2k-1)!!\,s^k$; and for $c>-\frac1{2s}$, $E[e^{-cB_s^2}]=(1+2cs)^{-1/2}$ (and $=+\infty$ for $c\le-\frac1{2s}$).
 
 **Itô cookbook (memorise; $B$ a Brownian motion, $B_0=0$).**
 
@@ -807,7 +807,7 @@ $$
 X_\infty\sim N\Big(0,\frac{1}{2\lambda^3}\Big).
 $$
 
-**Common pitfalls.** Forgetting the boundary term $e^{-\lambda t}B_t$; wrong variance ($\frac1{\lambda^2}\cdot\frac1{2\lambda}$).
+**Common pitfalls.** Forgetting the boundary term $e^{-\lambda t}B_t$; forgetting the factor $\frac1{\lambda^2}$ in the variance (the correct value is $\frac1{\lambda^2}\cdot\frac1{2\lambda}=\frac1{2\lambda^3}$).
 
 ### Exercise 12 (★★, 20 min). Brownian bridge (Example 6.10, assignment 2026 Problem 2.3a)
 

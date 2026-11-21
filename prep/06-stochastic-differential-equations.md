@@ -2,7 +2,7 @@
 
 This chapter covers syllabus section **8. Stochastic Differential Equations** (slides 8, based on Baldi Ch. 9, plus the handwritten notes, pages 8.1 to 8.15). The section on **locally Lipschitz coefficients** (Theorem 8.15 Localization, Assumption 8.16, Theorem 8.17, Remarks 8.18 and 8.19) is **excluded** from the syllabus. It is only used below as a black box in two places: the driftless equation in Theorem 8.25, and Theorem 8.20.
 
-Numbering follows the course slides and notes. Baldi numbers are a secondary reference: Lemma 8.9 is Baldi Lemma 9.1, Theorem 8.10 is Baldi Thm 9.1, Theorem 8.13 is Baldi Thm 9.2, Theorem 8.20 is Baldi Thm 9.5, Lemma 8.21 is Baldi Lemma 9.2, Theorem 8.22 is Baldi Prop 9.1, Theorem 8.23 is Baldi Thm 9.9, and Theorem 8.25 is Baldi Thm 9.10. Always quote the course numbers on the exam.
+Numbering follows the course slides and notes. Baldi numbers are a secondary reference: Lemma 8.9 is Baldi Lemma 9.1, Theorem 8.10 is Baldi Thm 9.1, Theorem 8.13 is Baldi Thm 9.2, Theorem 8.20 is Baldi Thm 9.5, Lemma 8.21 is Baldi Lemma 9.2, Theorem 8.22 is Baldi Prop 9.1, Theorem 8.23 is Baldi Thm 9.9, and Theorem 8.25 is Baldi Thm 12.3 (Proposition 8.26 is Baldi formula (12.15)). Always quote the course numbers on the exam.
 
 ## 1. Exam relevance
 
@@ -900,7 +900,7 @@ $$
 
 **Common pitfalls.** Writing $e^{-b(t)t}$ instead of $e^{-\int_0^tb}$ when $b$ depends on $t$.
 
-### Exercise 6 (★★, 30 min). The general affine equation (Baldi 9.10, 9.11; Øksendal 5.6)
+### Exercise 6 (★★, 30 min). The general affine equation (Baldi 9.10, 9.11; Øksendal 5.6 is the special case $a=r$, $b=c=0$)
 
 Consider $dX_t=(a+bX_t)\,dt+(c+\kappa X_t)\,dB_t$, $X_0=x$, with $a,b,c,\kappa\in\mathbb R$. (The task sheets often write $d$ for $\kappa$; we rename it to avoid confusion with the differential.)
 
@@ -1034,7 +1034,7 @@ Since $\tau_n\uparrow\tau_x$, the equation holds on $[0,\tau_x)$.
 
 **Common pitfalls.** Applying Itô to $f$ on all of $\mathbb R$ ($f$ is singular at $1/x$). Thinking that local Lipschitz alone guarantees global existence.
 
-### Exercise 11 (★★, 25 min). A priori $L^2$ estimate via Itô and Gronwall (Øksendal 5.10)
+### Exercise 11 (★★, 25 min). A priori $L^2$ estimate via Itô and Gronwall (in the style of Øksendal 5.10, with different hypotheses and constants)
 
 Assume $|b(x,t)|^2+|\sigma(x,t)|^2\le K(1+|x|^2)$, and let $X$ be a solution with $X_0=Z\in L^2$, $Z$ $\mathcal F_0$-measurable. Show
 $$
@@ -1179,7 +1179,7 @@ $$
 
 **Common pitfalls.** Applying optional stopping at an unbounded $\tau$ without the bounded-convergence argument.
 
-### Exercise 17 (★★★, 25 min). A nonlinear equation solved by an integrating factor (Øksendal 5.16 type)
+### Exercise 17 (★★★, 25 min). A nonlinear equation solved by an integrating factor (Øksendal 5.16(c))
 
 Let $x>0$, $\alpha\in\mathbb R$, and consider $dX_t=\frac1{X_t}dt+\alpha X_tdB_t$, $X_0=x$. Let $F_t=\exp\big(-\alpha B_t+\frac12\alpha^2t\big)$.
 (a) Show that $Y_t=F_tX_t$ satisfies the pathwise ODE $\frac{dY_t}{dt}=\frac{F_t^2}{Y_t}$.

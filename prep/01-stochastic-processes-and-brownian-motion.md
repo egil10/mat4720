@@ -183,7 +183,7 @@ $$
 **Remark 1.21.**
 
 - $\sigma(\mathcal C)$ is denoted $\mathcal B(E)^T$. It is the smallest $\sigma$-algebra on $E^T$ making all coordinate projections measurable.
-- Let $\mathcal C_\infty=\{\omega\in E^T:(\omega(t_1),\omega(t_2),\dots)\in B_1\times B_2\times\cdots\}$ be the cylinders with countably infinite base. Then every set of $\mathcal B(E)^T$ is of this form (it depends on countably many coordinates only).
+- Let $\mathcal C_\infty$ be the sets of the form $\{\omega\in E^T:(\omega(t_1),\omega(t_2),\dots)\in B\}$ with $t_1,t_2,\dots\in T$ and $B\in\mathcal B(E)^{\otimes\mathbb N}$ (cylinders with countably infinite base). Then every set of $\mathcal B(E)^T$ is of this form (it depends on countably many coordinates only). (Rectangular bases $B_1\times B_2\times\cdots$ are not enough: the class of such sets is not closed under complements.)
 - So $\mathcal B(E)^T$ is a "small" $\sigma$-algebra. It does **not** contain $C(T;E)\subset E^T$: otherwise one could decide whether a function is continuous from its values at countably many points, which is false (think of the Dirichlet function $\mathbf 1_{\mathbb Q}(t)$, $t\in[0,1]$, which agrees with the continuous function $1$ on the rationals).
 - Hence Theorem 1.20 alone cannot construct a process with continuous paths. With Theorem 1.15 we can then find a continuous version (e.g. for BM).
 - Other theorems, with a similar measure-theoretic flavour, build the process directly on $C(T;E)$.
@@ -986,7 +986,7 @@ Also, $E\int_a^b|X_s|\,ds\le\sqrt c(b-a)<\infty$, so $\int_a^bX_s\,ds$ is a.s. w
 $$
 E\Big[\Big(\int_a^bX_s\,ds\Big)^2\Big]=E\Big[\int_a^b\int_a^bX_sX_t\,ds\,dt\Big]=\int_a^b\int_a^bE[X_sX_t]\,ds\,dt=0 .
 $$
-(c) By (b), $\int_a^bX_s\,ds=0$ a.s., off a null set $N_{a,b}$ that depends on $(a,b)$. Let $N=\bigcup_{a<b\in\mathbb Q\cap[0,1]}N_{a,b}$ (null, plus the null set where $s\mapsto X_s(\omega)$ is not integrable). For $\omega\notin N$, the integrable function $f=X_\cdot(\omega)$ has $\int_a^bf=0$ for all rational $a<b$, hence (by approximation) for all intervals. Its integral over every Borel set is then 0 (Dynkin / Carathéodory: the finite signed measures $\int_Af^+$ and $\int_Af^-$ agree on intervals), so $f=0$ a.e. $\blacksquare$
+(c) By (b), $\int_a^bX_s\,ds=0$ a.s., off a null set $N_{a,b}$ that depends on $(a,b)$. Let $N=\bigcup_{a<b\in\mathbb Q\cap[0,1]}N_{a,b}$ (null, plus the null set where $s\mapsto X_s(\omega)$ is not integrable). For $\omega\notin N$, the integrable function $f=X_\cdot(\omega)$ has $\int_a^bf=0$ for all rational $a<b$, hence (by approximation) for all intervals. Its integral over every Borel set is then 0 (Dynkin / Carathéodory: the finite measures $A\mapsto\int_Af^+$ and $A\mapsto\int_Af^-$ have equal total mass and agree on the $\pi$-system of intervals), so $f=0$ a.e. $\blacksquare$
 
 **Common pitfalls.** Using a null set depending on $(a,b)$ and concluding for all intervals at once without the countable union. Forgetting to justify Fubini (integrability).
 
