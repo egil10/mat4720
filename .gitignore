@@ -1,0 +1,10 @@
+# Copyrighted / course source material (do not publish)
+/*.pdf
+sources/
+
+# OS / LaTeX junk
+.DS_Store
+*.aux
+*.log
+*.out
+*.toc
